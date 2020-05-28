@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@Repository
+//so its a bean that can be injected
+@Repository("fakeDao")
 public class FakePersonDataAccessService implements PersonDAO {
 
     private static List<Person> DB = new ArrayList<>();
